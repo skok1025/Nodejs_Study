@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: true,
             defaultValue: DataTypes.NOW,
         },
-    }, {
-        timestamps: false,
+    },{
+        timestamp: false,
     });
-};
+}

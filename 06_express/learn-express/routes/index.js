@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
       console.log(fields);
       var result = 'rows : ' + JSON.stringify(rows) + '<br><br>' +
         'fields : ' + JSON.stringify(fields);
-      res.send(result);
+      res.send(JSON.stringify(rows));
     } else {
       console.log('query error : ' + err);
       res.send(err);

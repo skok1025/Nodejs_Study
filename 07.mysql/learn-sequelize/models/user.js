@@ -1,5 +1,5 @@
-module.exports = (sequelzie, DataTypes) => {
-    return sequelzie.define('user', {
+module.exports = (sequelize, DataTypes) => {
+    return sequelize.define('user', {
         name: {
             type: DataTypes.STRING(20),
             allowNull: false,
@@ -15,14 +15,14 @@ module.exports = (sequelzie, DataTypes) => {
         },
         comment: {
             type: DataTypes.TEXT,
-            allowNull: false;
+            allowNull: true,
         },
         create_at: {
-            type: DataTypes.DATE, 
+            type: DataTypes.DATE,
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
     }, {
         timestamps: false,
     });
-};
+}
