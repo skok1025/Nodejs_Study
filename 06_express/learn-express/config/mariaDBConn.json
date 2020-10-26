@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "post": 3307,
+    "user": "root",
+    "password": "root",
+    "database": "test"
+}
